@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sahil Lokhande – Systems Software Engineer (C/C++, Linux)</title>
+<meta name="description" content="Sahil Lokhande is a systems software developer with 3 years of experience in C, C++, Linux, networking and embedded software.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f4; --surface:#ffffff; --ink:#14202b; --muted:#506172; --line:#cdd5dd; --accent:#1f5fbf; --accent-ink:#ffffff;
+  --display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --body:'Instrument Sans','Segoe UI',system-ui,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#101820;--surface:#18232e;--ink:#e8edf2;--muted:#9aabbb;--line:#2b3a48;--accent:#6aa5ff;--accent-ink:#0a1420}
+}
+:root[data-theme="dark"]{--bg:#101820;--surface:#18232e;--ink:#e8edf2;--muted:#9aabbb;--line:#2b3a48;--accent:#6aa5ff;--accent-ink:#0a1420}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+header.top strong{font:700 1.1rem var(--display)}
+nav{display:flex;gap:1.25rem;flex-wrap:wrap;font-size:.95rem}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+
+.hero{padding:clamp(2.5rem,8vw,6rem) 0 clamp(2rem,6vw,4rem);border-bottom:1px solid var(--line)}
+.hero h1{font:700 clamp(3rem,11vw,7.5rem)/.95 var(--display);letter-spacing:-.035em;margin:0}
+.hex{display:flex;gap:.6rem;flex-wrap:wrap;margin:1.1rem 0 1.75rem;font:500 .85rem/1 ui-monospace,Menlo,Consolas,monospace;color:var(--muted)}
+.hex span{border:1px solid var(--line);padding:.35rem .5rem;border-radius:3px;background:var(--surface)}
+.hex span b{font-weight:500;color:var(--accent);margin-left:.4rem}
+.hero p.lead{font-size:clamp(1.15rem,2.4vw,1.5rem);line-height:1.5;max-width:40rem;margin:0 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.7rem 1.2rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+.btn:hover{filter:brightness(1.1)}
+
+section{padding:clamp(2.5rem,6vw,4rem) 0;border-bottom:1px solid var(--line)}
+.grid{display:grid;grid-template-columns:12rem 1fr;gap:1.5rem 3rem}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+h2{font:700 1.5rem/1.2 var(--display);margin:0;letter-spacing:-.01em}
+h3{font:700 1.2rem/1.3 var(--display);margin:0 0 .25rem}
+.meta{color:var(--muted);font-size:.95rem;margin:0 0 1rem}
+ul{margin:.5rem 0 0;padding-left:1.15rem}
+li{margin:.35rem 0;max-width:42rem}
+.role{margin-bottom:2rem}
+.proj{padding:1.25rem 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.tag{display:inline-block;font-size:.8rem;border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:.1rem .55rem;border-radius:99px;margin:.1rem .2rem .1rem 0}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem}
+.skills h3{font-size:1rem}
+.skills p{margin:.25rem 0 0;color:var(--muted)}
+.contact a.big{font:700 clamp(1.4rem,5vw,2.4rem)/1.2 var(--display);word-break:break-all}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+#theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:6px;padding:.3rem .7rem;font:inherit;font-size:.85rem;cursor:pointer}
+#theme:hover{color:var(--ink)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>SL</strong>
+    <nav aria-label="Primary">
+      <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      <button id="theme" type="button" aria-label="Toggle dark mode">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+  <div class="hero">
+    <h1>Sahil Lokhande</h1>
+    <div class="hex" aria-hidden="true"><span>53<b>S</b></span><span>41<b>A</b></span><span>48<b>H</b></span><span>49<b>I</b></span><span>4C<b>L</b></span></div>
+    <p class="lead">I write C and C++ for Linux systems: managed switches, gas meters, trading engines and Wi-Fi routers. Three years of building, debugging and testing low-level software.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:sahildb8@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://github.com/sahil-l0khande">GitHub</a>
+      <a class="btn ghost" href="https://linkedin.com/in/sahil-lokhande-226041214">LinkedIn</a>
+    </div>
+  </div>
+
+  <section id="experience" class="grid">
+    <h2>Experience</h2>
+    <div>
+      <div class="role">
+        <h3>Associate Software Engineer, Plexusbit Software</h3>
+        <p class="meta">Pune (Remote) · August 2022 to August 2025</p>
+
+        <div class="proj">
+          <h3>Managed switch backend</h3>
+          <p>Built backend web pages for a managed switch using C-based CGI on the Realtek SDK.</p>
+          <ul>
+            <li>Helped with the frontend, tested whole features end to end and debugged issues.</li>
+            <li>Documented enhancements and changes to the existing codebase.</li>
+          </ul>
+          <span class="tag">C</span><span class="tag">CGI</span><span class="tag">Realtek SDK</span>
+        </div>
+
+        <div class="proj">
+          <h3>Smart gas meter</h3>
+          <p>Improved production code stability by adding mutexes and semaphores for synchronization.</p>
+          <ul><li>Found and fixed bugs through systematic testing.</li></ul>
+          <span class="tag">C</span><span class="tag">Multithreading</span><span class="tag">Embedded</span>
+        </div>
+
+        <div class="proj">
+          <h3>Order execution system</h3>
+          <p>Designed and built a high-performance system for handling real-time trade orders.</p>
+          <ul><li>Wrote and tuned low-latency order matching logic for fast, accurate execution.</li></ul>
+          <span class="tag">C++</span><span class="tag">Low latency</span>
+        </div>
+
+        <div class="proj">
+          <h3>Captive portal on OpenWrt</h3>
+          <p>Set up a captive portal with CoovaChilli and a cloud backend to control user access over Wi-Fi.</p>
+          <ul><li>Integrated a custom login page with session-based access control and a redirect to the user's intended URL after login.</li></ul>
+          <span class="tag">OpenWrt</span><span class="tag">CoovaChilli</span><span class="tag">Networking</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="grid">
+    <h2>Personal projects</h2>
+    <div>
+      <div class="proj">
+        <h3>Message queue application using IPC</h3>
+        <p>A Linux demo of inter-process communication in C++. A sender puts commands on a message queue, and a receiver reads them and performs the file operations: create, write and read.</p>
+        <span class="tag">C++</span><span class="tag">IPC</span><span class="tag">Linux</span>
+        <p><a href="https://github.com/sahil-l0khande">View on GitHub</a></p>
+      </div>
+      <div class="proj">
+        <h3>Multithreaded TCP server</h3>
+        <p>A socket server in C that creates a new thread for every client that connects, so many clients are served at once over TCP.</p>
+        <span class="tag">C</span><span class="tag">Sockets</span><span class="tag">Threads</span>
+        <p><a href="https://github.com/sahil-l0khande">View on GitHub</a></p>
+      </div>
+      <div class="proj">
+        <h3>Unix buffer cache visualizer</h3>
+        <p>A Qt GUI that shows how the Unix buffer cache works by simulating buffer states, hash queues and free list operations.</p>
+        <span class="tag">C++</span><span class="tag">Qt</span><span class="tag">OS internals</span>
+        <p><a href="https://github.com/sahil-l0khande">View on GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="grid">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Languages</h3><p>C, C++</p></div>
+      <div><h3>Systems</h3><p>Linux system programming, UNIX, multithreading, IPC, GNU toolchain</p></div>
+      <div><h3>Networking</h3><p>TCP/IP, HTTP, HTTPS, TFTP, SSH, socket programming</p></div>
+      <div><h3>Fundamentals</h3><p>Data structures and algorithms</p></div>
+      <div><h3>Tools</h3><p>Vim (ctags, cscope), VS Code, GDB, Bash scripting, ESP32, ESP-IDF, AWS</p></div>
+      <div><h3>Frameworks</h3><p>Qt, Qt Creator</p></div>
+    </div>
+  </section>
+
+  <section id="education" class="grid">
+    <h2>Education</h2>
+    <div>
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p class="meta">PES's Modern College of Engineering, Shivajinagar, Pune · October 2022 to October 2024</p>
+    </div>
+  </section>
+
+  <section id="contact" class="grid contact" style="border-bottom:0">
+    <h2>Contact</h2>
+    <div>
+      <p>I'm open to systems, embedded and backend C/C++ roles. The fastest way to reach me is email.</p>
+      <p><a class="big" href="mailto:sahildb8@gmail.com">sahildb8@gmail.com</a></p>
+      <p><a href="https://linkedin.com/in/sahil-lokhande-226041214">LinkedIn</a> · <a href="https://github.com/sahil-l0khande">GitHub</a></p>
+    </div>
+  </section>
+  </main>
+
+  <footer><span>© 2026 Sahil Lokhande</span><span>Pune, India</span></footer>
+</div>
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s)}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next)}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
